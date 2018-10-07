@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-default" id="navigate">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./home.html"><img src="./img/main_logo.png" class="logo"> 教师云</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="./classes.html">所有课程</a></li>
+                    <li><a href="#">待定</a></li>
+                    <li><a href="#">待定</a></li>
+                    <li><a href="#">待定</a></li>
+                    <li><a href="#">待定</a></li>
+                </ul>
+                <div class="searchBox hidden-xs hidden-sm">
+                    <input type="text" class="search">
+                    <span class="glyphicon glyphicon-search"></span>
+                </div>
+                <div class="sginBox">
+                    <p data-toggle="modal" data-toggle="modal" data-target=".bs-example-modal-sm">注册 / 登录</p>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container" id="contentBox">
+        <div class="row">
+            <div class="col-md-2 contLeft">
+                <img src="./bjt.jpg" alt="">
+                <h3>qwesdsa</h3>
+                <p>帐号管理</p>
+                <ul>
+                    <li class="active">个人信息</li>
+                    <li>最近浏览</li>
+                </ul>
+            </div>
+            <div>
+                <div class="col-md-9 contRight modi">
+                    <div class="btn1" id="modify">修改</div>
+                    <p>个人信息</p>
+                    <div class="box">
+                        <div class="key">昵称</div>
+                        <input type="text" class="values" disabled value="12132465" id="nickname">
+                    </div>
+                    <div class="box">
+                        <div class="key">性别</div>
+                        <input type="text" class="values" disabled value="12132465" id="sex">
+                    </div>
+                    <div class="box">
+                        <div class="key">签名</div>
+                        <input type="text" class="values" disabled value="12132465" id="signature">
+                    </div>
+                    <div class="box">
+                        <div class="key">邮箱</div>
+                        <input type="text" class="values" disabled value="12132465" id="email">
+                    </div>
+                    <div class="box">
+                        <div class="key">电话</div>
+                        <input type="text" class="values" disabled value="12132465" id="phone">
+                    </div>
+                </div>
+                <div class="col-md-9 contRight modi none">
+                    <!-- <div class="btn1" id="modify">修改</div> -->
+                    <p>最近浏览</p>
+                    <div class="mb">
+                        <img src="./bjt.jpg" alt="">
+                        <div class="contRightC">
+                            <p><span class="title">邮箱</span></p>
+                            <p class="gray">可用邮箱加密码登录慕课网，可用邮箱找回密码</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-9 contRight modi">
+                    <p>帐号绑定</p>
+                    <div class="mb">
+                        <img src="./bjt.jpg" alt="">
+                        <div class="contRightC">
+                            <p><span class="title">邮箱</span> <span class="red">未绑定</span></p>
+                            <p class="gray">可用邮箱加密码登录慕课网，可用邮箱找回密码</p>
+                        </div>
+                        <div class="btn1">立即绑定</div>
+                    </div>
+                    <div class="mb">
+                        <img src="./bjt.jpg" alt="">
+                        <div class="contRightC">
+                            <p><span class="title">邮箱</span> <span class="red">未绑定</span></p>
+                            <p class="gray">可用邮箱加密码登录慕课网，可用邮箱找回密码</p>
+                        </div>
+                        <div class="btn1">立即绑定</div>
+                    </div>
+                    <div class="mb">
+                        <img src="./bjt.jpg" alt="">
+                        <div class="contRightC">
+                            <p><span class="title">邮箱</span> <span class="red">未绑定</span></p>
+                            <p class="gray">可用邮箱加密码登录慕课网，可用邮箱找回密码</p>
+                        </div>
+                        <div class="btn1">立即绑定</div>
+                    </div>
+                </div> -->
+            </div>
+
+        </div>
+    </div>
+    <script src="./lib/jquery-3.3.1.js"></script>
+    <script src="./lib/bootstrap.min.js"></script>
+    <script src="../config/config.js"></script>
+    <script src="../js/public.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+
+</html>

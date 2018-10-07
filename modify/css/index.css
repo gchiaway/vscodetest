@@ -1,0 +1,148 @@
+li {
+    list-style: none;
+}
+
+.contLeft>img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.contLeft {
+    background-color: #F8FAFC;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 5%;
+
+}
+
+.contLeft h3 {
+    text-align: center;
+}
+
+.contLeft p {
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-top: 5px;
+    margin: 0;
+}
+
+.contLeft ul {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    margin: 0;
+}
+
+.contLeft ul li {
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.active {
+    background-color: red;
+    color: white;
+}
+
+.contRight {
+    margin-left: 5%;
+}
+
+.contRight>p {
+    font-size: 20px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.contRight>.box {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    /* border-top: 2px solid #e3e3e3; */
+    padding-left: 5%;
+}
+
+.contRight>div img {
+    width: 100px;
+    height: 100px;
+}
+
+.contRightC {
+    margin-left: 20px;
+}
+
+.contRightC p {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    line-height: 30px;
+}
+
+.contRightC .title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.red {
+    color: red;
+}
+
+.gray {
+    color: #93999f;
+}
+
+.btn1 {
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid #e3e3ee;
+    right: 5%;
+    text-align: center;
+    line-height: 38px;
+    cursor: pointer;
+    padding-left: 0 !important;
+    float: right;
+    margin-top: 15px;
+}
+
+.key {
+    height: 60px;
+    width: 120px;
+    background-color: #f3f5f7;
+    text-align: center;
+    line-height: 60px;
+    color: #07111b;
+    font-weight: 700;
+}
+
+.values {
+    width: calc(100% - 120px);
+    margin-left: 15px;
+    padding: 20px 0 20px 22px;
+    border: 1px solid #f3f5f7;
+}
+
+.values:focus {
+    border: none;
+}
+
+.values:disabled {
+    background-color: #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #d9dde1;
+}
+.mb{
+    display: flex;
+    padding: 15px;
+}

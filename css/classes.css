@@ -1,0 +1,143 @@
+.classesBox {
+    background-color: #fff;
+    border-bottom: 1px solid #edf1f2;
+    padding: 0 5%;
+}
+
+.classesBox h2 {
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+.classesBox ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    position: relative;
+}
+
+.classesBox ul li {
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.classesBox ul span {
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.classesBox ul span:nth-child(1) {
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    left: 0;
+}
+
+
+
+.sort {
+    padding-top: 10px;
+}
+
+.sort span {
+    display: inline-block;
+    color: #1c1f21;
+    width: 48px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.sapnHorver {
+    background: #9199a1;
+    color: #FFFFFF !important;
+    cursor: default;
+    border-radius: 12px;
+}
+
+.mobileS {
+    width: 90%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -83%;
+    z-index: 99;
+    background-color: #fff;
+    padding-top: 10px;
+    padding-left: 30px;
+    height: 100vh;
+    display: none;
+}
+
+.courseBox .row a {
+    color: #1c1f21 !important;
+}
+
+.mobileS span {
+    float: left;
+    padding: 8px 15px;
+    border: 1px solid #edf1f2;
+    font-size: 12px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.mobileS div {
+    float: left;
+    margin-top: 10px;
+}
+
+.f {
+    margin-left: 10px;
+}
+
+.foot button {
+    width: 40%;
+    height: 40px;
+}
+
+.foot {
+    width: 100%;
+    position: fixed;
+    bottom: 30px;
+}
+
+.choose {
+    background: rgba(242, 13, 13, .06);
+    border-radius: 6px;
+    font-weight: 700;
+    color: #F20D0D;
+}
+
+#cancel {
+    width: 40%;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    background-color: red;
+    color: white;
+}
+
+.box {
+    height: 300px !important;
+}
+.pagination{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media screen and (max-width: 450px) {
+    .classesBox {
+        position: absolute;
+        right: -90%;
+        width: 90%;
+        height: 80vh;
+        z-index: 99;
+        display: none;
+    }
+
+    .box {
+        height:auto !important;
+    }
+
+}

@@ -1,0 +1,2 @@
+var url = 'http://ersufu.natappfree.cc/rest/api/v1/'
+var token = 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4YThhYjBiMjQ2ZGM4MTEyMDE0NmRjODE4MTk1MDA1MiIsInN1YiI6ImFkbWluIiwiaWF0IjoxNTM4NzI1Mjc5fQ.9lbpGWYuRXFhMVj6j_v5MiOvmvmjxGpsdjhPDnIi_gI'

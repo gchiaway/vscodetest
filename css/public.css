@@ -1,0 +1,142 @@
+body {
+    background-color: #F8FAFC;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/********** 修改的boostrap样式***************/
+.modal-header {
+    padding: 0;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.modal-dialog {
+    width: 350px !important;
+}
+
+/**************************/
+
+/**********复用单体样式*************/
+.activeS {
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+.none {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/***********************/
+
+
+#navigate {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(7, 17, 27, .1);
+    padding: 5px 3%;
+}
+
+#navigate .logo {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
+#navigate .searchBox {
+    display: inline-block;
+    position: relative;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+#navigate .search {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    line-height: 30px;
+    width: 200px;
+}
+
+.searchBox span {
+    position: relative;
+    right: 25px;
+    cursor: pointer;
+}
+
+.sginBox {
+    float: right;
+    line-height: 50px;
+}
+
+.sginBox p {
+    cursor: pointer;
+}
+
+
+
+#myModal span {
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.mybtn {
+    width: 100%;
+}
+
+#myModal p {
+    text-align: center;
+    text-decoration: none;
+}
+
+#myModal a {
+    color: red;
+    text-decoration: none;
+}
+
+
+#courseBox .box {
+    padding: 15px;
+
+}
+
+#courseBox h2 {
+    text-align: center;
+}
+
+#courseBox img {
+    width: 100%;
+}
+
+#courseBox .row .box a {
+    color: black;
+}
+
+@media screen and (max-width: 450px) {
+    #courseBox .row .box a {
+        display: flex;
+        color: black;
+    }
+
+    #courseBox .row .box div {
+        padding: 0 15px;
+    }
+
+    #courseBox .row img {
+        width: 100px;
+        height: 100px;
+    }
+
+}

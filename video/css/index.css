@@ -1,0 +1,29 @@
+/*
+ * 通用样式
+ */
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+
+
+
+/*
+ * 头部区域
+ */
+#header{
+	height: 40px;
+	background-color: #303030;
+}
+#header .row a{
+	display: block;
+	color: #CCCCCC;
+	line-height: 40px;
+}
+#header .row a:hover {
+	text-decoration: none;
+	color: #fff;
+}

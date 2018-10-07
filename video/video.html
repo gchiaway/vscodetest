@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<title>教师云平台</title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="lib/res/reset.css" />
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/video.css" />
+
+</head>
+
+<body>
+	<!-- 头部 -->
+	<nav class="navbar navbar-default" id="navigate">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+				 aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="../img/main_logo.png" class="logo"> 教师云</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="#">课程</a></li>
+					<li><a href="#">待定</a></li>
+					<li><a href="#">待定</a></li>
+					<li><a href="#">待定</a></li>
+					<li><a href="#">待定</a></li>
+
+				</ul>
+				<div class="searchBox hidden-xs hidden-sm">
+					<input type="text" class="search">
+					<span class="glyphicon glyphicon-search"></span>
+				</div>
+				<div class="sginBox">
+					<p data-toggle="modal" data-toggle="modal" data-target=".bs-example-modal-sm">注册 / 登录</p>
+				</div>
+
+			</div>
+		</div>
+	</nav>
+	<!-- /登录 注册 -->
+
+	<!-- 评论 -->
+	<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" style="position:fixed; top:30%;">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true" style="font-size:20px;">×</span>
+					</button>
+					<h4 class="modal-title" id="loginTitle" style="float: left; color: #337Ab7;cursor: pointer; " onclick="login();">我要吐槽</h4>
+
+					<div class="clearfix"></div>
+				</div>
+
+				<div class="modal-body" id="release">
+					<form id="loginForm1" class="form-horizontal" style="padding: 0px 20px;">
+
+						<div class="form-group">
+							<textarea class="form-control" id="message-text" placeholder="300字以内，请随意吐槽"></textarea>
+						</div>
+
+						<a href="javascript:void(0)" id="sub">
+							<div class="header-login-btn" id="submit">发布评论</div>
+						</a>
+					</form>
+
+				</div>
+
+
+
+
+			</div>
+		</div>
+	</div>
+	<!-- /评论 -->
+
+	<!-- 视频+章节 -->
+	<div class="f-main">
+		<div class="f-main-max">
+			<div class="main-course-left hidden-xs">
+				<div class="list" id="btn1">
+					<a href="#">章节</a>
+				</div>
+			</div>
+			<div class="course-info" id="courseInfo">
+
+				<!--<div class="course-title">1-1 java编程基础</div>-->
+
+				<!--<div class="course-video">
+						<video src="img/demo.mp4" width="100%" height="100%" controls preload></video>
+					</div>-->
+			</div>
+		</div>
+
+		<div class="main-course-cen">
+			<!-- 评论-start -->
+			<div class="container">
+				<!-- 选项卡面板 -->
+				<div class="ul-wapper">
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active">
+							<a href="#tab_01" aria-controls="tab_01" role="tab" data-toggle="tab">
+								评论
+							</a>
+						</li>
+						<li role="presentation" class="hidden-lg hidden-md">
+							<a href="#tab_02" aria-controls="tab_02" role="tab" data-toggle="tab">
+								章节
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="fb">
+					<a href="#myModal1" data-toggle="modal" class="btn btn-default hidden-xs">我要发布</a>
+				</div>
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane fade active in" id="tab_01">
+						<div class="row" id="row">
+							<!--<div class="col-xs-12">
+									<div class="panel panel-clown active">
+										<div class="panel-heading active">
+											<img src="img/game_wangzhery_4.png" />
+										</div>
+
+										<div class="panel-body">
+											<h5>我是张三</h5>
+											<span class="time">2016-12-05</span>
+											<div class="row">
+												<span class="text">这门课真实用！一个列表嵌套好多种布局的时候，用recyclerview控件优雅实现，效率果然提高不少，老板肯定又会夸我，啊哈哈！！！</span>
+												<div class="text-foot">
+													<a href="#">2-2 我是java第二节</a>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>-->
+
+							<!--<div class="col-xs-12">
+									<div class="panel panel-clown active">
+										<div class="panel-heading active">
+											<img src="img/game_wangzhery_4.png" />
+										</div>
+
+										<div class="panel-body">
+											<h5>我是张三</h5>
+											<span class="time">2016-12-05</span>
+											<div class="row">
+												<span class="text">这门课真实用！一个列表嵌套好多种布局的时候，用recyclerview控件优雅实现，效率果然提高不少，老板肯定又会夸我，啊哈哈！！！</span>
+												<div class="text-foot">
+													<a href="#">2-2 我是java第二节</a>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>-->
+							<!--								
+								<div class="col-xs-12">
+									<div class="panel panel-clown active">
+										<div class="panel-heading active">
+											<img src="img/game_wangzhery_4.png" />
+										</div>
+
+										<div class="panel-body">
+											<h5>我是张三</h5>
+											<span class="time">2016-12-05</span>
+											<div class="row">
+												<span class="text">这门课真实用！一个列表嵌套好多种布局的时候，用recyclerview控件优雅实现，效率果然提高不少，老板肯定又会夸我，啊哈哈！！！</span>
+												<div class="text-foot">
+													<a href="#">2-2 我是java第二节</a>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>-->
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="tab_02">花Q 花Q 花Q 花~~Q，撸完没有</div>
+				</div>
+			</div>
+
+
+
+			<!-- 评论-end -->
+		</div>
+		<!-- 章节 -->
+		<!-- 章节-start -->
+
+		<div id="box" class="main-course-left1 hidden-xs">
+			<h4 class="mt-50">所有章节</h4>
+			<div class="video-course-fix-parent">
+				<div class="video-course-fix" id="video-course-fix">
+
+
+					<!--<div class="chapter" style="padding: 0px ;border: none;">
+							<a href="javascript:void(0);" class="js-open">
+								<h3>
+									<strong>第1章 课程介绍</strong>
+									<span class="drop-down">▼</span> 
+								</h3>
+							</a>
+							<ul class="chapter-sub" style="padding-left:10px;">
+								<a href="../course/video.html">
+									<li class="ellipsis video-li"><i class="icon-video">▶</i> 1-1 使用RecyclerView优雅实现复杂布局-课程介绍 (06:46)</li>
+								</a>
+
+								<a href="/video/13038">
+									<li class="ellipsis  video-li"><i class="icon-video">▶</i> 1-2 包括录制到文件、播放文件，可以实现类似于微信的语音消息发送与播放 (06:46)</li>
+								</a>
+							</ul>
+						</div>-->
+
+					<!--<div class="chapter" style="padding: 0px ;border: none;">
+							<a href="javascript:void(0);" class="js-open">
+								<h3>
+									<strong>第2章 课程介绍</strong>
+									<span class="drop-down">▼</span> 
+								</h3>
+							</a>
+							<ul class="chapter-sub" style="padding-left:10px;">
+								<a href="../course/video.html">
+									<li class="ellipsis video-li"><i class="icon-video">▶</i> 1-1 使用RecyclerView优雅实现复杂布局-课程介绍 (06:46)</li>
+								</a>
+
+								<a href="/video/13038">
+									<li class="ellipsis  video-li"><i class="icon-video">▶</i> 1-2 包括录制到文件、播放文件，可以实现类似于微信的语音消息发送与播放 (06:46)</li>
+								</a>
+							</ul>
+						</div>-->
+					<!--
+						<div class="chapter" style="padding: 0px ;border: none;">
+							<a href="javascript:void(0);" class="js-open">
+								<h3>
+									<strong>第3章 课程介绍</strong>
+									<span class="drop-down">▼</span> 
+								</h3>
+							</a>
+							<ul class="chapter-sub" style="padding-left:10px;">
+								<a href="../course/video.html">
+									<li class="ellipsis video-li"><i class="icon-video">▶</i> 1-1 使用RecyclerView优雅实现复杂布局-课程介绍 (06:46)</li>
+								</a>
+
+								<a href="/video/13038">
+									<li class="ellipsis  video-li"><i class="icon-video">▶</i> 1-2 包括录制到文件、播放文件，可以实现类似于微信的语音消息发送与播放 (06:46)</li>
+								</a>
+							</ul>
+						</div>-->
+
+					<!--<div class="chapter" style="padding: 0px ;border: none;">
+							<a href="javascript:void(0);" class="js-open">
+								<h3>
+									<strong>第4章 课程介绍</strong>
+									<span class="drop-down">▼</span> 
+								</h3>
+							</a>
+							<ul class="chapter-sub" style="padding-left:10px;">
+								<a href="../course/video.html">
+									<li class="ellipsis video-li"><i class="icon-video">▶</i> 1-1 使用RecyclerView优雅实现复杂布局-课程介绍 (06:46)</li>
+								</a>
+
+								<a href="/video/13038">
+									<li class="ellipsis  video-li"><i class="icon-video">▶</i> 1-2 包括录制到文件、播放文件，可以实现类似于微信的语音消息发送与播放 (06:46)</li>
+								</a>
+							</ul>
+						</div>-->
+					<!--
+						<div class="chapter" style="padding: 0px ;border: none;">
+							<a href="javascript:void(0);" class="js-open">
+								<h3>
+									<strong>第5章 课程介绍</strong>
+									<span class="drop-down">▼</span> 
+								</h3>
+							</a>
+							<ul class="chapter-sub" style="padding-left:10px;">
+								<a href="../course/video.html">
+									<li class="ellipsis video-li"><i class="icon-video">▶</i> 1-1 使用RecyclerView优雅实现复杂布局-课程介绍 (06:46)</li>
+								</a>
+
+								<a href="/video/13038">
+									<li class="ellipsis  video-li"><i class="icon-video">▶</i> 1-2 包括录制到文件、播放文件，可以实现类似于微信的语音消息发送与播放 (06:46)</li>
+								</a>
+							</ul>
+						</div>-->
+				</div>
+			</div>
+		</div>
+		<!-- 章节-end -->
+		<!-- 章节 -->
+
+	</div>
+	<!-- /视频+章节 -->
+
+</body>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/videomenu.js"></script>
+<script src="js/animate.js"></script>
+<script type="text/javascript">
+	function login() {
+		$('#loginTitle').css('color', '#337Ab7');
+		$('#loginForm').show();
+		$('#registeTitle').css('color', '#000');
+		$('#registeForm').hide();
+	}
+
+	function registe() {
+		$('#loginTitle').css('color', '#000');
+		$('#loginForm').hide();
+		$('#registeTitle').css('color', '#337Ab7');
+		$('#registeForm').show();
+	};
+	$(function () {
+		$("#userdetail").popover({
+			trigger: 'manual',
+			placement: 'bottom',
+			html: 'true',
+			content: '<div style="width:300px;height:300px;"></div>',
+			animation: false
+		}).on("mouseenter", function () {
+			var _this = this;
+			$(this).popover("show");
+			$(this).siblings(".popover").on("mouseleave", function () {
+				$(_this).popover('hide');
+			});
+		}).on("mouseleave", function () {
+			var _this = this;
+			setTimeout(function () {
+				if (!$(".popover:hover").length) {
+					$(_this).popover("hide")
+				}
+			}, 0);
+		});
+		//课程分类展示 
+		$(".category").popover({
+			trigger: 'manual',
+			placement: 'right',
+			html: 'true',
+			content: '',
+			animation: false
+		}).on("mouseenter", function () {
+			var cid = $(this).attr('c-id');
+			$('#' + cid).show();
+			$('#' + cid).hover(function () {
+				$('#' + cid).show();
+			}, function () {
+				$('#' + cid).hide();
+			});
+		}).on("mouseleave", function () {
+			var cid = $(this).attr('c-id');
+			$('#' + cid).hide();
+		});
+	});
+</script>
+<script src="../config.js/config.js"></script>
+<script src="../js/public.js"></script>
+<script src="./js/comment.js"></script>
+<script src="./js/playname.js "></script>
+
+</html>

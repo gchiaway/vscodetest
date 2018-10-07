@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/classes.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default" id="navigate">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./home.html"><img src="./img/main_logo.png" class="logo"> 教师云</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="./classes.html">课程</a></li>
+                    <li><a href="#">待定</a></li>
+                    <li><a href="#">待定</a></li>
+                    <li><a href="#">待定</a></li>
+                    <li><a href="#">待定</a></li>
+
+                </ul>
+                <div class="searchBox hidden-xs hidden-sm">
+                    <input type="text" class="search">
+                    <span class="glyphicon glyphicon-search"></span>
+                </div>
+                <div class="sginBox">
+                    <p data-toggle="modal" data-toggle="modal" data-target=".bs-example-modal-sm">注册 / 登录</p>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="classesBox">
+        <h2><img src="./img/v.png"> 精品课程</h2>
+        <div class="" id="xueke">
+            <ul>
+                <span>学科：</span>
+                <span class="choose" id='0'>全部</span>
+            </ul>
+        </div>
+
+        <div class="" id="fangxiang">
+            <ul><span>方向：</span>
+                <span class="choose" id='0'>全部</span>
+            </ul>
+        </div>
+
+        <div class="" id="fenlei">
+            <ul><span>分类：</span>
+                <span>&nbsp;</span>
+            </ul>
+        </div>
+
+        <button type="button" class="btn btn-default hidden-md hidden-lg" id="cancel">完成</button>
+
+    </div>
+    <!-- <div class="show-xs show-sm mobileS">
+        <div id="xueke1">
+            <h4>学科</h4>
+            <div class="f">
+                <span>精品课程</span>
+                <span>精品课程</span>
+                <span>精品课程</span>
+            </div>
+        </div>
+        <div id="fangxiang1">
+            <h4>方向</h4>
+            <div class="f">
+                <span>精品课程</span>
+                <span>精品课程</span>
+                <span>精品课程</span>
+            </div>
+        </div>
+        <div id="fenlei1">
+            <h4>分类</h4>
+            <div class="f">
+                <span>精品课程</span>
+                <span>精品课程</span>
+                <span>精品课程</span>
+            </div>
+        </div>
+
+        <div class="foot">
+            <button type="button" class="btn btn-default" id="cancel">取消</button>
+            <button type="button" class="btn btn-danger" id="sure">确定</button>
+        </div>
+    </div> -->
+    <div class="container" id="courseBox">
+        <div class="sort">
+            <!-- <span class="sapnHorver">最热</span>
+            <span>最新</span> -->
+            <span id="moreIcon" class="glyphicon glyphicon-backward hidden-md hidden-lg" style="float: right;"></span>
+        </div>
+        <div class="row">
+
+            <!-- <div class="col-md-3 box">
+                <a href="">
+                    <img src="./img/t1.jpg">
+                    <div>
+                        <h4>Vue2.5开发去哪儿网App 从零基础入门到实战项目</h3>
+                            <p>待定</p>
+                    </div>
+                </a>
+            </div> -->
+
+        </div>
+    </div>
+    <div class="container" id="fenye">
+        <!-- <nav aria-label="...">
+            <ul class="pagination">
+                <li class="disabled">
+                    <span>
+                        <span aria-hidden="true">&laquo;</span>
+                    </span>
+                </li>
+                <li class="active">
+                    <span>1</span>
+                </li>
+
+                <li class="disabled">
+                    <span>
+                        <span aria-hidden="true">&laquo;</span>
+                    </span>
+                </li>
+            </ul>
+        </nav> -->
+    </div>
+
+
+
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./config.js/config.js"></script>
+    <script src="./js/public.js"></script>
+    <script src="./js/classes.js"></script>
+</body>
+
+</html>

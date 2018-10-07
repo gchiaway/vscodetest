@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title></title>
+	<link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<script src="./js/jquery-3.3.1.js"></script>
+	<!--[if lt IE 9]>
+		<script src="lib/html5shiv/html5shiv.min.js"></script>
+		<script src="lib/respond/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+	<div class="totle">
+		<!--头部-->
+		<div class="head">
+			<!--头部图片上的内容-->
+			<div class="head-img" id="courseInfo">
+				//课程方向
+				<!--<div class="proj1 container">-->
+				<!--<span id="" class="col-md-offset-1 pl15"><a>课程</a></span>-->
+				<!--<span id="a1">\</span>-->
+				<!--<span id="a2">前端开发</span>-->
+				<!--<span id="b1">\</span>-->
+				<!--<span id="b">HTML/CSS</span>-->
+				<!--<span id="b1">\</span>-->
+				<!--<span id="b2">入门微信小程序开发</span>-->
+				<!--</div>-->
+				<!--<h2 class="col-md-offset-2">Java从入门到精通</h2>-->
+				<!--<div class="proj container">-->
+				<!--<p id="img1" src=""></p>-->
+				<!--<span id="up">连胜</span>-->
+				<!--<span id="sub">全栈工程师</span>-->
+				<!--<span id="a" class="col-sm-offset-3">难度</span>-->
+				<!--<span id="a1">中级</span>-->
+				<!--<span id="a2">.</span>								-->
+				<!--<span id="b">时长</span>-->
+				<!--<span id="b1">1时40分</span>-->
+				<!--<span id="b2">.</span>-->
+				<!--<span id="c">学习人数</span>-->
+				<!--<span id="c1">76651</span>-->
+				<!--<span id="c2">.</span>-->
+				<!--<span id="d">综合测评</span>-->
+				<!--<span id="d1">9.3</span>							-->
+				<!--</div>-->
+			</div>
+			<!-- 导航 -->
+			<ul class="nav nav-tabs container my" role="tablist">
+				<li role="presentation" class="active nav1 col-xs-6 col-sm-3"><a href="#chapterInfo" aria-controls="home" role="tab"
+					 data-toggle="tab">课程章节</a></li>
+				<li role="presentation" class="nav2 col-xs-6 col-sm-3"><a href="#profileInfo" aria-controls="profile" role="tab"
+					 data-toggle="tab">问答评论</a></li>
+				<li role="presentation" class="nav3 col-xs-6 col-sm-3"><a href="#messages" aria-controls="messages" role="tab"
+					 data-toggle="tab">同学笔记</a></li>
+				<li role="presentation" class="nav4 col-xs-6 col-sm-3"><a href="#settings" aria-controls="settings" role="tab"
+					 data-toggle="tab">用户评价</a></li>
+			</ul>
+
+			<!-- 对应导航内容 -->
+			<!--总的课程章节-->
+			<div class="container">
+
+				<!--<div class="col-xs-2"></div>-->
+
+				<!--中间内容部分-->
+				<div class="tab-content col-xs-12" id="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="chapterInfo">
+						<!--<div class="chapter">
+							<div class="je"> 
+								简介：讲解微信小程序的基本知识，如何注册，并开发一个自己的小程序，以及小程序开发过程中部分常见的问题。
+							</div>
+						</div>			    	
+				    	<div class="chapter">
+							<a href="javascript:void(0);">
+								<h3>
+									<strong>第1章 课程介绍</strong>								
+								</h3>						
+							</a>
+							<h6>本章节什么是微信小程序，小程序有哪些宣传方式，小程序官方文档介绍，小程序开发流程，如何注册小程序，
+									新建小程序项目，小程序开发工具讲解，小程序代码结构讲解，代码编写-tabbar的配置。
+							</h6>
+							<ul class="chapter-sub">
+								<a href="img/xzpq.mp4" > 
+									<li class="chapter-sub-li">
+										<i class="glyphicon glyphicon-play-circle"></i> 1-1 使用RecyclerView优雅实现复杂布局
+										<p id="start-btn">开始学习</p>
+									</li>
+								</a>
+								
+								<a href="img/xzpq.mp4" > 
+									<li class="chapter-sub-li">
+										<i class="glyphicon glyphicon-play-circle"></i> 1-2 录制到文件、播放文件，实现类似于微信的语音消息发送与播放 
+										<p id="start-btn">开始学习</p>
+									</li>
+								</a>
+							</ul>
+						</div>
+						
+						<div class="chapter">
+							<a href="javascript:void(0);">
+								<h3>
+									<strong>第2章 课程介绍</strong>
+								</h3>
+							</a>
+							<h6>本章节什么是微信小程序，小程序有哪些宣传方式，小程序官方文档介绍，小程序开发流程，如何注册小程序，
+									新建小程序项目，小程序开发工具讲解，小程序代码结构讲解，代码编写-tabbar的配置。
+							</h6>
+							<ul class="chapter-sub">
+								<a href="/video/13038" > 
+									<li class="chapter-sub-li">
+										<i class="glyphicon glyphicon-play-circle"></i> 2-1 使用RecyclerView优雅实现复杂布局
+										<p id="start-btn">开始学习</p>
+									</li>
+								</a>
+								
+								<a href="/video/13038" > 
+									<li class="chapter-sub-li" id="stali">
+										<i class="glyphicon glyphicon-play-circle"></i> 2-2 录制到文件、播放文件,实现类似于微信的语音消息发送与播放
+										<p id="start-btn">开始学习</p>
+									</li>
+								</a>
+							</ul>
+						</div>
+						
+						<div class="chapter" >
+							<a href="javascript:void(0);">
+								<h3>
+									<strong>第3章 课程介绍</strong>								
+								</h3>
+							</a>
+							<h6>本章节什么是微信小程序，小程序有哪些宣传方式，小程序官方文档介绍，小程序开发流程，如何注册小程序，
+									新建小程序项目，小程序开发工具讲解，小程序代码结构讲解，代码编写-tabbar的配置。
+							</h6>
+							<ul class="chapter-sub">
+								<a href="/video/13038" > 
+									<li class="chapter-sub-li" >
+										<i class="glyphicon glyphicon-play-circle"></i> 3-1 使用RecyclerView优雅实现复杂布局
+										<p id="start-btn">开始学习</p>
+									</li>
+								</a>
+								
+								<a href="/video/13038" > 
+									<li class="chapter-sub-li" >
+										<i class="glyphicon glyphicon-play-circle"></i> 3-2 录制到文件、播放文件，实现类似于微信的语音消息发送与播放 
+										<p id="start-btn">开始学习</p>
+									</li>
+								</a>
+								
+								<a href="/video/13038" > 
+									<li class="chapter-sub-li">
+										<i class="glyphicon glyphicon-play-circleo"></i> 3-3 录制到文件、播放文件，实现类似于微信的语音消息发送与播放
+										<p id="start-btn">开始学习</p>
+									</li>
+								</a>
+								
+							</ul>
+						</div>-->
+					</div>
+
+					<!--问答评论-->
+					<div role="tabpanel" class="tab-pane" id="profileInfo">
+						<div class="comenList" id="comenList">
+							<!--<div class="comment clearfix">-->
+							<!--<div class="comment-header"><img class="lecturer-uimg" src="img/8557d9147db98a0.jpg"></div>-->
+							<!--<div class="comment-main">-->
+							<!--<div class="user-name">我是张三</div>-->
+							<!--<div class="comment-content">这门课真实用！</div>-->
+							<!--<div class="comment-footer"><span id="lesson">hsjj</span><span>时间：2016-12-05</span></div>-->
+							<!--</div>-->
+							<!--</div>-->
+
+							<!--<div class="comment clearfix">-->
+							<!--<div class="comment-header"><img class="lecturer-uimg" src="img/8557d9147db98a0.jpg"></div>-->
+							<!--<div class="comment-main">-->
+							<!--<div class="user-name">我是张三</div>-->
+							<!--<div class="comment-content">这门课真实用！一个列表嵌套好多种布局的时候，用recyclerview控件优雅实现，效率果然提高不少，老板肯定又会夸我，啊哈哈！！！</div>-->
+							<!--<div class="comment-footer">时间：2016-12-05-->
+							<!--</div>-->
+							<!--</div>-->
+							<!--</div>		-->
+						</div>
+
+					</div>
+					<!--同学笔记-->
+					<div role="tabpanel" class="tab-pane" id="messages">
+
+						333
+					</div>
+					<!--用户评价-->
+					<div role="tabpanel" class="tab-pane" id="settings">444</div>
+				</div>
+
+				<!--<div class="col-xs-2"></div>	-->
+			</div>
+		</div>
+	</div>
+
+	<script src="./lib/jquery/jquery.js"></script>
+	<script src="./lib/bootstrap/js/bootstrap.js"></script>
+	<script src="../config.js/config.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/pas.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,373 @@
+/*
+ * 通用样式
+ */
+*{
+	margin: 0;
+	padding: 0;
+	margin: 0;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	line-height: 18px
+}
+body {
+	background-color: rgba(255,255,255,0.7);
+}
+
+
+/*
+ * 头部区域
+ */
+#header {
+	height: 60px;
+	width: 100%;
+	background-color: #303030;
+}
+#header .f-header-box .header-nav-item {
+	color: #ccc;
+	line-height: 0;
+}
+#header .f-header-box form {
+	position: absolute;
+	display: inline-block;
+	margin-top: 14px;
+	width: 25%;
+}
+
+#header .f-header-box .btn {
+	position: relative;
+    float: right;
+    top: -34px;
+    right: -60px;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px){
+	.course-info .course-title {
+	    margin-bottom: 20px;
+	    line-height: 31px;
+	    font-weight: 700;
+	    font-size: 18px;
+	    color: #eee;
+	    text-indent: 1em;
+	}
+}
+
+/*
+ * 评论 视频区域
+ */
+.f-main {
+	background-color: #555;
+	width: 100%;
+    margin: 0 auto;
+    min-height: 280px;
+    margin-bottom: 100px;
+}
+.f-main .f-main-max {
+	width: 100%;
+	box-shadow: 0px 5px 10px #c0c0c0;
+	padding-top: 20px;
+	background-color: rgba(35,35,35,0.6x);
+}
+
+.f-main .f-main-max .main-course-left{
+    width: 60px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    z-index: 10000;
+}
+
+.f-main .main-course-cen {
+	position: absolute;
+	left: 10%;
+}
+
+@media (max-width: 769px) {
+	.f-main .main-course-cen {
+		position: absolute;
+		left: 0;
+	}
+}
+
+.f-main .main-course-cen .course-title {
+	margin-bottom: 20px;
+    line-height: 31px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+	.f-main .main-course-cen .course-title {
+		margin-bottom: 20px;
+	    line-height: 31px;
+	    font-weight: 700;
+	    font-size: 16px;
+	    color: #000;
+	}
+}
+
+.f-main .main-course-cen .course-video {
+	width: 1200px;
+    height: auto;
+}
+@media (max-width: 768px) {
+	.f-main {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.f-main .main-course-cen .course-video {
+		width: 100%;
+		height: auto;
+		border: 2px solid #93999F;
+	}
+}
+.f-main .main-course-cen .course-menu .menu-item{
+	/*background-color: #CCCCCC;*/
+	text-align: center;
+}
+.f-main .main-course-cen .comment {
+	float: left;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 0px 0px 40px 0px;
+}
+.f-main textarea {
+	display: inline-block;
+	height: 80px;
+	font-size: 16px;
+}
+
+/*
+ * 评论菜单栏
+ */
+.ul-wapper {
+	padding-top: 20px;
+}
+.main-course-cen .nav-tabs {
+	padding-left: 20px;
+}
+.main-course-cen .nav-tabs li {
+	width: 100px;
+	text-align: center;
+}
+
+.main-course-cen .tab-content {
+	padding: 20px 0;
+}
+
+.main-course-cen .fb {
+	float: right;
+	margin: 15px 0;
+}
+
+/*
+ * 评论选项卡
+ */
+.panel-clown {
+	border: 0;
+    border-radius: 0;
+    box-shadow: 1px 1px 5px #ccc;
+    color: #555555;
+}
+
+.panel-clown .panel-heading {
+	color: #333;
+    float: left;
+    width: 100px;
+    padding: 0;
+    height: 150px;
+    text-align: center;
+    position: relative;
+}
+.panel-clown .panel-heading img {
+	margin: 10px 20px;
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+.panel-clown .panel-body {
+	margin-left: 100px;
+	height: 150px;
+}
+.panel-clown .panel-body h5 {
+	font-size: 18px;
+	display: inline-block;
+}
+.panel-clown .panel-body .time{
+	float: right;
+    font-size: 16px;
+    line-height: 38px;
+    color: #C0C0C0;
+}
+.panel-clown .panel-body .text {
+	text-indent: 2em;
+}
+.panel-clown .panel-body .text-foot{
+	
+}
+.panel-clown .panel-body .text-foot a{
+	float: right;
+	color: #C0C0C0;
+	padding-top: 15px;
+	padding-right: 15px;
+}
+
+@media (max-width:767px){
+	.panel-clown .panel-heading {
+		color: #333;
+	    float: left;
+	    width: 60px;
+	    padding: 0;
+	    height: 170px;
+	    text-align: center;
+	    position: relative;
+	}
+	.panel-clown .panel-heading img {
+		margin: 10px 10px;
+		width: 40px;
+		height: 40px;
+		float: left;
+	}
+	.panel-clown .panel-body {
+		margin-left: 60px;
+		height: 150px;
+	}
+	.panel-clown .panel-body h5 {
+		font-size: 14px;
+		display: inline-block;
+	}
+	.panel-clown .panel-body .time{
+		float: right;
+	    font-size: 10px;
+	    line-height: 38px;
+	    color: #C0C0C0;
+	}
+	.panel-clown .panel-body .text {
+		text-indent: 2em;
+		font-size: 11px;
+	}
+	.panel-clown .panel-body .text-foot a{
+		font-size: 10px;
+		float: right;
+		color: #C0C0C0;
+		padding-top: 5px;
+		padding-right: 15px;
+	}
+	
+}
+
+
+
+.course-info .course-video video {
+	border-radius: 10px;
+}
+
+.comment-main {
+	display: inline-block;
+	padding-left: 10px;
+	padding-top: 20px;
+}
+@media (max-width: 768px) {
+	.comment-main {
+	    float: right;
+	     width: 100%; 
+	}
+}
+
+.comment-header {
+	display: inline-block;
+    float: left;
+    width: 70px;
+    border-radius: 10px 10px 0px 0px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.comment-main .comment-content {
+	margin-top: 10px;
+    width: 100%;
+    text-indent: 2em;
+}
+
+
+.pl #commentForm,.pl .btn {
+	display: block;
+	position: relative;
+    right: 5%;
+    float: right;
+    background-color: #eee;
+    color: #555;
+}
+#myModal1 .form-control {
+	height: 100px;
+}
+
+
+
+/*
+ * 章节区域
+ */
+.list {
+	width: 60px;
+	height: 50px;
+	background-color: rgba(0,0,0,0.6);
+	border-radius: 4px;
+	text-align: center;
+	position: absolute;
+	top: 200px;
+}
+.list a {
+	display: block;
+	color: #F3F5F7;
+	line-height: 50px;
+}
+
+
+@media (max-width:1023px) {
+	.list {
+		width: 40px;
+		height: 40px;
+		background-color: rgba(0,0,0,0.6);
+		border-radius: 4px;
+		text-align: center;
+		position: absolute;
+		top: 200px;
+	}
+	.list a {
+		display: block;
+		color: #F3F5F7;
+		line-height: 40px;
+		font-size: 10px;
+	}
+
+}
+
+
+.main-course-left1{
+	display: none;
+	float: left;
+	background-color: rgba(0,0,0,0.6);
+	position: absolute;
+	top: 160px;
+	zoom: 0.8;
+	left: 76px;
+	border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+	.main-course-left1{
+		display: none;
+		float: left;
+		background-color: rgba(0,0,0,0.6);
+		position: absolute;
+		top: 165px;
+		zoom: 0.8;
+		left: 49px;
+		border-radius: 8px;
+	}
+}

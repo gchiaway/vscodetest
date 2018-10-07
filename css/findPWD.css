@@ -1,0 +1,17 @@
+.headerLogo img {
+    width: 75px;
+    height: 75px;
+}
+.headerLogo{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.headerLogo span{
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 2%;
+}
+#from{
+    padding: 30px 10%;
+}
